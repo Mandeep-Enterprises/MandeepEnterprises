@@ -3,44 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mandeep Enterprises - Professional Maid Agency in Delhi</title>
+    <title>Mandeep Enterprises - Maid & Caretaker Agency in New Delhi</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; color: #333; line-height: 1.6; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f0f4f8; color: #1e293b; line-height: 1.6; }
         
         /* Header & Navigation */
-        header { background: linear-gradient(135deg, #0d233a 0%, #1a365d 100%); color: #fff; padding: 25px 20px; text-align: center; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.15); }
-        .lang-btn { position: absolute; top: 20px; right: 20px; background-color: #3182ce; color: #fff; border: none; padding: 8px 16px; border-radius: 20px; cursor: pointer; font-weight: bold; font-size: 14px; transition: background 0.3s; }
-        .lang-btn:hover { background-color: #2b6cb0; }
+        header { background: linear-gradient(135deg, #0b192c 0%, #1e3e62 100%); color: #fff; padding: 25px 20px; text-align: center; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.15); }
+        .lang-btn { position: absolute; top: 20px; right: 20px; background-color: #2563eb; color: #fff; border: none; padding: 8px 16px; border-radius: 20px; cursor: pointer; font-weight: bold; font-size: 14px; transition: background 0.3s; }
+        .lang-btn:hover { background-color: #1d4ed8; }
         
         /* Hero Section */
-        .hero { background: linear-gradient(rgba(13, 35, 58, 0.85), rgba(26, 54, 93, 0.85)), url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80') center/cover; color: #fff; text-align: center; padding: 60px 20px; }
-        .hero h2 { font-size: 32px; margin-bottom: 15px; }
-        .hero p { font-size: 18px; color: #bae6fd; max-width: 600px; margin: 0 auto 25px; }
-        .btn-whatsapp { display: inline-block; background-color: #25d366; color: #fff; text-decoration: none; padding: 14px 28px; border-radius: 30px; font-weight: bold; font-size: 18px; box-shadow: 0 4px 12px rgba(37,211,102,0.4); transition: transform 0.2s; }
-        .btn-whatsapp:hover { transform: scale(1.05); }
+        .hero { background: linear-gradient(rgba(11, 25, 44, 0.88), rgba(30, 62, 98, 0.88)), url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80') center/cover; color: #fff; text-align: center; padding: 50px 20px; }
+        .hero h2 { font-size: 30px; margin-bottom: 12px; text-shadow: 0 2px 4px rgba(0,0,0,0.3); }
+        .hero p { font-size: 17px; color: #93c5fd; max-width: 600px; margin: 0 auto 25px; }
+        
+        .btn-group { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
+        .btn-whatsapp { background-color: #25d366; color: #fff; text-decoration: none; padding: 12px 24px; border-radius: 30px; font-weight: bold; font-size: 16px; box-shadow: 0 4px 12px rgba(37,211,102,0.4); display: inline-block; }
+        .btn-call { background-color: #2563eb; color: #fff; text-decoration: none; padding: 12px 24px; border-radius: 30px; font-weight: bold; font-size: 16px; box-shadow: 0 4px 12px rgba(37,99,235,0.4); display: inline-block; }
 
         /* Main Container */
         .container { max-width: 900px; margin: 30px auto; padding: 0 20px; }
-        .card { background: #fff; border-radius: 12px; padding: 30px; margin-bottom: 25px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
-        .card h3 { color: #0d233a; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; margin-bottom: 20px; font-size: 22px; }
+        .card { background: #fff; border-radius: 12px; padding: 25px; margin-bottom: 25px; box-shadow: 0 4px 12px rgba(15,23,42,0.06); border: 1px solid #e2e8f0; }
+        .card h3 { border-bottom: 2px solid #cbd5e1; padding-bottom: 10px; margin-bottom: 15px; font-size: 22px; font-weight: 700; }
+
+        /* Navy Blue Styling for Terms Header */
+        .tc-card h3 { color: #0b192c !important; }
+
+        /* Contact Details */
+        .contact-info p { margin-bottom: 10px; font-size: 16px; font-weight: 500; color: #334155; }
+        .contact-info a { color: #2563eb; text-decoration: none; word-break: break-all; }
 
         /* Services Grid */
-        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; }
-        .service-item { background: #f8fafc; border: 1px solid #e2e8f0; padding: 15px; border-radius: 8px; text-align: center; font-weight: 600; color: #2d3748; }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+        .service-item { background: #eff6ff; border: 1px solid #bfdbfe; padding: 14px; border-radius: 8px; text-align: center; font-weight: 600; color: #1e3e62; }
 
-        /* Terms & Conditions List */
+        /* Terms List */
         .tc-list { list-style-type: none; }
-        .tc-list li { padding: 10px 0; border-bottom: 1px solid #edf2f7; position: relative; padding-left: 25px; }
-        .tc-list li::before { content: "✓"; position: absolute; left: 0; color: #3182ce; font-weight: bold; }
+        .tc-list li { padding: 10px 0; border-bottom: 1px solid #f1f5f9; position: relative; padding-left: 28px; font-size: 15px; color: #334155; }
+        .tc-list li::before { content: "✓"; position: absolute; left: 0; color: #2563eb; font-weight: bold; font-size: 16px; }
 
         /* Footer */
-        footer { background: #0d233a; color: #a0aec0; text-align: center; padding: 20px; font-size: 14px; margin-top: 40px; }
+        footer { background: #0b192c; color: #94a3b8; text-align: center; padding: 20px; font-size: 14px; margin-top: 30px; }
         footer strong { color: #fff; }
 
         @media (max-width: 600px) {
             .lang-btn { position: static; display: inline-block; margin-top: 15px; }
-            .hero h2 { font-size: 24px; }
+            .hero h2 { font-size: 22px; }
         }
     </style>
 </head>
@@ -55,13 +64,16 @@
     <section class="hero">
         <h2 id="hero-title">Reliable Domestic Help For Your Home</h2>
         <p id="hero-desc">Background-verified house maids, cooks, babysitters, and elderly caretakers in Delhi NCR.</p>
-        <a href="https://wa.me/919999999999" class="btn-whatsapp" id="whatsapp-btn">💬 Chat on WhatsApp</a>
+        <div class="btn-group">
+            <a href="https://wa.me/919650649459" class="btn-whatsapp" id="whatsapp-btn">💬 Chat on WhatsApp</a>
+            <a href="tel:+919650649459" class="btn-call" id="call-btn">📞 Call Us Now</a>
+        </div>
     </section>
 
     <div class="container">
         <!-- Services Section -->
         <div class="card">
-            <h3 id="services-title">Our Services</h3>
+            <h3 id="services-title" style="color: #1e3e62;">Our Services</h3>
             <div class="services-grid">
                 <div class="service-item" id="srv-1">Full-Time / Part-Time House Maids</div>
                 <div class="service-item" id="srv-2">Professional Cooks / Chefs</div>
@@ -70,22 +82,26 @@
             </div>
         </div>
 
-        <!-- Address Section -->
-        <div class="card">
-            <h3 id="address-title">Office Address</h3>
-            <p style="font-size: 17px; font-weight: 500; color: #2d3748;">
-                📍 <span id="address-text">B-8 Aali Bistar, 2nd Floor, New Delhi, India</span>
-            </p>
+        <!-- Contact & Address Section -->
+        <div class="card contact-info">
+            <h3 id="address-title" style="color: #1e3e62;">Contact & Office Address</h3>
+            <p>📍 <strong id="lbl-address">Address:</strong> <span id="address-text">B-8 Aali Bistar, 2nd Floor, New Delhi, India</span></p>
+            <p>📞 <strong id="lbl-phone">Phone:</strong> <a href="tel:+919650649459">+91 9650649459</a></p>
+            <p>💬 <strong id="lbl-whatsapp">WhatsApp:</strong> <a href="https://wa.me/919650649459">+91 9650649459</a></p>
+            <p>✉️ <strong id="lbl-email">Email:</strong> <a href="mailto:mandeepenterprises15@gmail.com">mandeepenterprises15@gmail.com</a></p>
         </div>
 
         <!-- Terms & Conditions Section -->
-        <div class="card">
-            <h3 id="tc-title">Terms & Conditions</h3>
+        <div class="card tc-card">
+            <h3 id="tc-title">Terms And Conditions</h3>
             <ul class="tc-list">
-                <li id="tc-1">All candidates are background verified and documented.</li>
-                <li id="tc-2">Replacement option available within the agreed contract period.</li>
-                <li id="tc-3">Agency service charge is applicable upon final selection.</li>
-                <li id="tc-4">Salary payment should be settled directly or as per agreed terms.</li>
+                <li id="tc-1">Delhi Service Charge Is 40,000/- (Can Be changed later).</li>
+                <li id="tc-2">Commission Has to be paid in Cash.</li>
+                <li id="tc-3">Police Verification Must be done From Your Nearest Police Station.</li>
+                <li id="tc-4">Any Complaint Regarding maid should be informed any day in time Of 10:00 AM To 9:00 PM only.</li>
+                <li id="tc-5">Maid's Monthly Holiday is Only One.</li>
+                <li id="tc-6">If maid does not go on holiday and works, the holiday salary should be given.</li>
+                <li id="tc-7">Contract Only For 11 months.</li>
             </ul>
         </div>
     </div>
@@ -101,6 +117,98 @@
             en: {
                 langBtn: "हिंदी में देखें",
                 brandName: "Mandeep Enterprises",
+                brandTagline: "Trusted Maid & Caretaker Agency in New Delhi",
+                heroTitle: "Reliable Domestic Help For Your Home",
+                heroDesc: "Background-verified house maids, cooks, babysitters, and elderly caretakers in Delhi NCR.",
+                whatsappBtn: "💬 Chat on WhatsApp",
+                callBtn: "📞 Call Us Now",
+                servicesTitle: "Our Services",
+                srv1: "Full-Time / Part-Time House Maids",
+                srv2: "Professional Cooks / Chefs",
+                srv3: "Experienced Babysitters / Nannies",
+                srv4: "Elderly Caretakers & Patient Care",
+                addressTitle: "Contact & Office Address",
+                lblAddress: "Address:",
+                lblPhone: "Phone:",
+                lblWhatsapp: "WhatsApp:",
+                lblEmail: "Email:",
+                addressText: "B-8 Aali Bistar, 2nd Floor, New Delhi, India",
+                tcTitle: "Terms And Conditions",
+                tc1: "Delhi Service Charge Is 40,000/- (Can Be changed later).",
+                tc2: "Commission Has to be paid in Cash.",
+                tc3: "Police Verification Must be done From Your Nearest Police Station.",
+                tc4: "Any Complaint Regarding maid should be informed any day in time Of 10:00 AM To 9:00 PM only.",
+                tc5: "Maid's Monthly Holiday is Only One.",
+                tc6: "If maid does not go on holiday and works, the holiday salary should be given.",
+                tc7: "Contract Only For 11 months.",
+                footerBrand: "Mandeep Enterprises"
+            },
+            hi: {
+                langBtn: "View in English",
+                brandName: "मनदीप एंटरप्राइजेज",
+                brandTagline: "नई दिल्ली में भरोसेमंद मेड और केयरटेकर एजेंसी",
+                heroTitle: "आपके घर के लिए भरोसेमंद घरेलू सहायता",
+                heroDesc: "दिल्ली एनसीआर में बैकग्राउंड-वेरिफाइड मेड, रसोइया, बेबीसिटर और बुजुर्गों के केयरटेकर।",
+                whatsappBtn: "💬 व्हाट्सएप पर बात करें",
+                callBtn: "📞 अभी कॉल करें",
+                servicesTitle: "हमारी सेवाएं",
+                srv1: "फुल-टाइम / पार्ट-टाइम घरेलू मेड",
+                srv2: "प्रोफेशनल रसोइया / कुक",
+                srv3: "अनुभवी बेबीसिटर / नैनी",
+                srv4: "बुजुर्गों के केयरटेकर और मरीज की देखभाल",
+                addressTitle: "संपर्क और कार्यालय का पता",
+                lblAddress: "पता:",
+                lblPhone: "फोन:",
+                lblWhatsapp: "व्हाट्सएप:",
+                lblEmail: "ईमेल:",
+                addressText: "B-8 आली बिस्तर, दूसरी मंजिल (2nd Floor), नई दिल्ली, भारत",
+                tcTitle: "नियम एवं शर्तें (Terms And Conditions)",
+                tc1: "दिल्ली सर्विस चार्ज 40,000/- रुपये है (बाद में बदला जा सकता है)।",
+                tc2: "कमीशन का भुगतान नकद (Cash) में किया जाना चाहिए।",
+                tc3: "पुलिस वेरिफिकेशन आपके नजदीकी पुलिस स्टेशन से होना अनिवार्य है।",
+                tc4: "मेड से संबंधित कोई भी शिकायत किसी भी दिन सुबह 10:00 बजे से रात 9:00 बजे के बीच ही सूचित की जानी चाहिए।",
+                tc5: "मेड की महीने में केवल एक छुट्टी (Monthly Holiday) होगी।",
+                tc6: "यदि मेड छुट्टी पर नहीं जाती है और काम करती है, तो छुट्टी का वेतन (Salary) दिया जाना चाहिए।",
+                tc7: "अनुबंध (Contract) केवल 11 महीनों के लिए है।",
+                footerBrand: "मनदीप एंटरप्राइजेज"
+            }
+        };
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'en' ? 'hi' : 'en';
+            const data = content[currentLang];
+
+            document.getElementById('lang-btn').innerText = data.langBtn;
+            document.getElementById('brand-name').innerText = data.brandName;
+            document.getElementById('brand-tagline').innerText = data.brandTagline;
+            document.getElementById('hero-title').innerText = data.heroTitle;
+            document.getElementById('hero-desc').innerText = data.heroDesc;
+            document.getElementById('whatsapp-btn').innerText = data.whatsappBtn;
+            document.getElementById('call-btn').innerText = data.callBtn;
+            document.getElementById('services-title').innerText = data.servicesTitle;
+            document.getElementById('srv-1').innerText = data.srv1;
+            document.getElementById('srv-2').innerText = data.srv2;
+            document.getElementById('srv-3').innerText = data.srv3;
+            document.getElementById('srv-4').innerText = data.srv4;
+            document.getElementById('address-title').innerText = data.addressTitle;
+            document.getElementById('lbl-address').innerText = data.lblAddress;
+            document.getElementById('lbl-phone').innerText = data.lblPhone;
+            document.getElementById('lbl-whatsapp').innerText = data.lblWhatsapp;
+            document.getElementById('lbl-email').innerText = data.lblEmail;
+            document.getElementById('address-text').innerText = data.addressText;
+            document.getElementById('tc-title').innerText = data.tcTitle;
+            document.getElementById('tc-1').innerText = data.tc1;
+            document.getElementById('tc-2').innerText = data.tc2;
+            document.getElementById('tc-3').innerText = data.tc3;
+            document.getElementById('tc-4').innerText = data.tc4;
+            document.getElementById('tc-5').innerText = data.tc5;
+            document.getElementById('tc-6').innerText = data.tc6;
+            document.getElementById('tc-7').innerText = data.tc7;
+            document.getElementById('footer-brand').innerText = data.footerBrand;
+        }
+    </script>
+</body>
+</html>
                 brandTagline: "Trusted Maid & Caretaker Agency in New Delhi",
                 heroTitle: "Reliable Domestic Help For Your Home",
                 heroDesc: "Background-verified house maids, cooks, babysitters, and elderly caretakers in Delhi NCR.",
