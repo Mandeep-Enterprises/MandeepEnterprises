@@ -203,4 +203,101 @@
 
 </body>
   </html>
+      <p>© 2026 Mandeep Enterprises. All Rights Reserved.</p>
+</footer>
+
+<script>
+    let currentLang = 'en';
+
+    const translations = {
+        en: {
+            langBtn: "Translate to Hindi",
+            tagline: "Trusted & Professional Maid Agency Services",
+            heroTitle: "Reliable Domestic Help For Your Home",
+            heroSub: "Background verified Maids, Cooks, Nannies, and Caretakers",
+            btnWa: "Chat on WhatsApp",
+            servicesTitle: "Our Services",
+            s1Title: "House Maids",
+            s1Desc: "Trained staff for cleaning, dusting, and washing dishes.",
+            s2Title: "Professional Cooks",
+            s2Desc: "Experienced cooks for delicious and hygienic daily meals.",
+            s3Title: "Babysitters / Nannies",
+            s3Desc: "Safe, caring, and trustworthy childcare professionals.",
+            s4Title: "Elderly Care",
+            s4Desc: "Dedicated caretakers for senior citizens and patients.",
+            tcTitle: "Terms And Conditions",
+            tc1: "1. Delhi Service Charge is ₹40,000/- (Can be changed later).",
+            tc2: "2. Commission has to be paid in Cash.",
+            tc3: "3. Police Verification must be done from your nearest police station.",
+            tc4: "4. Any complaint regarding maid should be informed any day in time of 10:00 AM to 9:00 PM only.",
+            tc5: "5. Maid's monthly holiday is only one.",
+            tc6: "6. If maid does not go on holiday and works, the holiday salary should be given.",
+            contactTitle: "Contact Us & Address",
+            lblPhone: "Phone:",
+            lblEmail: "Email:",
+            lblAddress: "Address:"
+        },
+        hi: {
+            langBtn: "English Mein Karein",
+            tagline: "विश्वसनीय और पेशेवर मेड एजेंसी सेवाएं",
+            heroTitle: "आपके घर के लिए भरोसेमंद डोमेस्टिक हेल्प",
+            heroSub: "बैकग्राउंड वेरीफाइड मेड्स, कुक्स, बेबीसिटर्स और केयरटेकर",
+            btnWa: "व्हाट्सएप पर बात करें",
+            servicesTitle: "हमारी सेवाएं",
+            s1Title: "हाउस मेड्स",
+            s1Desc: "झाड़ू, पोंछा और बर्तन के लिए ट्रेंड स्टाफ।",
+            s2Title: "प्रोफेशनल कुक्स",
+            s2Desc: "घर जैसा स्वादिष्ट और हाइजीनिक खाना बनाने वाले शेफ।",
+            s3Title: "बेबीसिटर्स / नैनी",
+            s3Desc: "बच्चों की सुरक्षित और प्यार से देखभाल के लिए केयरटेकर।",
+            s4Title: "बुजुर्गों की देखभाल",
+            s4Desc: "बुजुर्गों और मरीजों की देखभाल के लिए समर्पित सहायक।",
+            tcTitle: "नियम और शर्तें (Terms And Conditions)",
+            tc1: "1. दिल्ली सर्विस चार्ज ₹40,000/- है (बाद में बदला जा सकता है)।",
+            tc2: "2. कमीशन का भुगतान कैश (Cash) में करना होगा।",
+            tc3: "3. पुलिस वेरिफिकेशन आपके नजदीकी पुलिस स्टेशन से कराना अनिवार्य है।",
+            tc4: "4. मेड से संबंधित कोई भी शिकायत केवल सुबह 10:00 बजे से रात 9:00 बजे के बीच ही दर्ज कराई जा सकती है।",
+            tc5: "5. मेड की महीने में केवल एक छुट्टी होगी।",
+            tc6: "6. यदि मेड छुट्टी पर नहीं जाती है और काम करती है, तो छुट्टी का वेतन (Salary) दिया जाना चाहिए।",
+            contactTitle: "संपर्क करें एवं पता",
+            lblPhone: "फोन नंबर:",
+            lblEmail: "ईमेल:",
+            lblAddress: "पता:"
+        }
+    };
+
+    function toggleLanguage() {
+        currentLang = currentLang === 'en' ? 'hi' : 'en';
+        const t = translations[currentLang];
+
+        document.querySelector('.lang-btn').innerText = t.langBtn;
+        document.getElementById('tagline').innerText = t.tagline;
+        document.getElementById('hero-title').innerText = t.heroTitle;
+        document.getElementById('hero-sub').innerText = t.heroSub;
+        document.getElementById('btn-wa').innerText = t.btnWa;
+        document.getElementById('services-title').innerText = t.servicesTitle;
+        document.getElementById('s1-title').innerText = t.s1Title;
+        document.getElementById('s1-desc').innerText = t.s1Desc;
+        document.getElementById('s2-title').innerText = t.s2Title;
+        document.getElementById('s2-desc').innerText = t.s2Desc;
+        document.getElementById('s3-title').innerText = t.s3Title;
+        document.getElementById('s3-desc').innerText = t.s3Desc;
+        document.getElementById('s4-title').innerText = t.s4Title;
+        document.getElementById('s4-desc').innerText = t.s4Desc;
+        document.getElementById('tc-title').innerText = t.tcTitle;
+        document.getElementById('tc-1').innerText = t.tc1;
+        document.getElementById('tc-2').innerText = t.tc2;
+        document.getElementById('tc-3').innerText = t.tc3;
+        document.getElementById('tc-4').innerText = t.tc4;
+        document.getElementById('tc-5').innerText = t.tc5;
+        document.getElementById('tc-6').innerText = t.tc6;
+        document.getElementById('contact-title').innerText = t.contactTitle;
+        document.getElementById('lbl-phone').innerText = t.lblPhone;
+        document.getElementById('lbl-email').innerText = t.lblEmail;
+        document.getElementById('lbl-address').innerText = t.lblAddress;
+    }
+</script>
+
+</body>
+  </html>
   
