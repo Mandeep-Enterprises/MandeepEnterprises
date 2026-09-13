@@ -8,119 +8,101 @@
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f0f4f8; color: #1e293b; line-height: 1.6; }
         
-        /* Header & Navigation */
-        header { background: linear-gradient(135deg, #0b192c 0%, #1e3e62 100%); color: #fff; padding: 25px 20px; text-align: center; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.15); }
-        .lang-btn { position: absolute; top: 20px; right: 20px; background-color: #2563eb; color: #fff; border: none; padding: 8px 16px; border-radius: 20px; cursor: pointer; font-weight: bold; font-size: 14px; transition: background 0.3s; }
-        .lang-btn:hover { background-color: #1d4ed8; }
+        /* Header */
+        header { background: linear-gradient(135deg, #0b192c 0%, #1e3e62 100%); color: #fff; padding: 25px 20px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.15); }
+        header h1 { font-size: 28px; margin-bottom: 5px; }
+        header p { font-size: 15px; color: #93c5fd; }
         
         /* Hero Section */
-        .hero { background: linear-gradient(rgba(11, 25, 44, 0.88), rgba(30, 62, 98, 0.88)), url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80') center/cover; color: #fff; text-align: center; padding: 50px 20px; }
-        .hero h2 { font-size: 30px; margin-bottom: 12px; text-shadow: 0 2px 4px rgba(0,0,0,0.3); }
-        .hero p { font-size: 17px; color: #93c5fd; max-width: 600px; margin: 0 auto 25px; }
+        .hero { background: linear-gradient(rgba(11, 25, 44, 0.88), rgba(30, 62, 98, 0.88)), url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80') center/cover; color: #fff; text-align: center; padding: 45px 20px; }
+        .hero h2 { font-size: 26px; margin-bottom: 10px; }
+        .hero p { font-size: 16px; color: #cbd5e1; max-width: 600px; margin: 0 auto 20px; }
         
-        .btn-group { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
-        .btn-whatsapp { background-color: #25d366; color: #fff; text-decoration: none; padding: 12px 24px; border-radius: 30px; font-weight: bold; font-size: 16px; box-shadow: 0 4px 12px rgba(37,211,102,0.4); display: inline-block; }
-        .btn-call { background-color: #2563eb; color: #fff; text-decoration: none; padding: 12px 24px; border-radius: 30px; font-weight: bold; font-size: 16px; box-shadow: 0 4px 12px rgba(37,99,235,0.4); display: inline-block; }
+        .btn-group { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+        .btn-whatsapp { background-color: #25d366; color: #fff; text-decoration: none; padding: 12px 22px; border-radius: 25px; font-weight: bold; font-size: 15px; box-shadow: 0 4px 10px rgba(37,211,102,0.3); }
+        .btn-call { background-color: #2563eb; color: #fff; text-decoration: none; padding: 12px 22px; border-radius: 25px; font-weight: bold; font-size: 15px; box-shadow: 0 4px 10px rgba(37,99,235,0.3); }
 
-        /* Main Container */
-        .container { max-width: 900px; margin: 30px auto; padding: 0 20px; }
-        .card { background: #fff; border-radius: 12px; padding: 25px; margin-bottom: 25px; box-shadow: 0 4px 12px rgba(15,23,42,0.06); border: 1px solid #e2e8f0; }
-        .card h3 { border-bottom: 2px solid #cbd5e1; padding-bottom: 10px; margin-bottom: 15px; font-size: 22px; font-weight: 700; }
-
-        /* Navy Blue Styling for Terms Header */
-        .tc-card h3 { color: #0b192c !important; }
-
-        /* Contact Details */
-        .contact-info p { margin-bottom: 10px; font-size: 16px; font-weight: 500; color: #334155; }
-        .contact-info a { color: #2563eb; text-decoration: none; word-break: break-all; }
+        /* Container */
+        .container { max-width: 850px; margin: 25px auto; padding: 0 15px; }
+        .card { background: #fff; border-radius: 10px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(15,23,42,0.06); border: 1px solid #e2e8f0; }
+        .card h3 { border-bottom: 2px solid #e2e8f0; padding-bottom: 8px; margin-bottom: 15px; font-size: 20px; font-weight: 700; color: #0b192c; }
 
         /* Services Grid */
-        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
-        .service-item { background: #eff6ff; border: 1px solid #bfdbfe; padding: 14px; border-radius: 8px; text-align: center; font-weight: 600; color: #1e3e62; }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; }
+        .service-item { background: #eff6ff; border: 1px solid #bfdbfe; padding: 12px; border-radius: 6px; text-align: center; font-weight: 600; color: #1e3e62; font-size: 15px; }
+
+        /* Contact Details */
+        .contact-info p { margin-bottom: 8px; font-size: 15px; font-weight: 500; color: #334155; }
+        .contact-info a { color: #2563eb; text-decoration: none; }
 
         /* Terms List */
         .tc-list { list-style-type: none; }
-        .tc-list li { padding: 10px 0; border-bottom: 1px solid #f1f5f9; position: relative; padding-left: 28px; font-size: 15px; color: #334155; }
-        .tc-list li::before { content: "✓"; position: absolute; left: 0; color: #2563eb; font-weight: bold; font-size: 16px; }
+        .tc-list li { padding: 8px 0; border-bottom: 1px solid #f1f5f9; position: relative; padding-left: 25px; font-size: 14px; color: #334155; }
+        .tc-list li::before { content: "✓"; position: absolute; left: 0; color: #2563eb; font-weight: bold; }
 
         /* Footer */
-        footer { background: #0b192c; color: #94a3b8; text-align: center; padding: 20px; font-size: 14px; margin-top: 30px; }
+        footer { background: #0b192c; color: #94a3b8; text-align: center; padding: 18px; font-size: 13px; margin-top: 25px; }
         footer strong { color: #fff; }
-
-        @media (max-width: 600px) {
-            .lang-btn { position: static; display: inline-block; margin-top: 15px; }
-            .hero h2 { font-size: 22px; }
-        }
     </style>
 </head>
 <body>
 
     <header>
-        <h1 id="brand-name">Mandeep Enterprises</h1>
-        <p id="brand-tagline">Trusted Maid & Caretaker Agency in New Delhi</p>
-        <button class="lang-btn" onclick="toggleLanguage()" id="lang-btn">हिंदी में देखें</button>
+        <h1>Mandeep Enterprises</h1>
+        <p>Trusted Maid & Caretaker Agency in New Delhi</p>
     </header>
 
     <section class="hero">
-        <h2 id="hero-title">Reliable Domestic Help For Your Home</h2>
-        <p id="hero-desc">Background-verified house maids, cooks, babysitters, and elderly caretakers in Delhi NCR.</p>
+        <h2>Reliable Domestic Help For Your Home</h2>
+        <p>Background-verified house maids, cooks, babysitters, and elderly caretakers in Delhi NCR.</p>
         <div class="btn-group">
-            <a href="https://wa.me/919650649459" class="btn-whatsapp" id="whatsapp-btn">💬 Chat on WhatsApp</a>
-            <a href="tel:+919650649459" class="btn-call" id="call-btn">📞 Call Us Now</a>
+            <a href="https://wa.me/919650649459" class="btn-whatsapp">💬 Chat on WhatsApp</a>
+            <a href="tel:+919650649459" class="btn-call">📞 Call Us Now</a>
         </div>
     </section>
 
     <div class="container">
         <!-- Services Section -->
         <div class="card">
-            <h3 id="services-title" style="color: #1e3e62;">Our Services</h3>
+            <h3>Our Services</h3>
             <div class="services-grid">
-                <div class="service-item" id="srv-1">Full-Time / Part-Time House Maids</div>
-                <div class="service-item" id="srv-2">Professional Cooks / Chefs</div>
-                <div class="service-item" id="srv-3">Experienced Babysitters / Nannies</div>
-                <div class="service-item" id="srv-4">Elderly Caretakers & Patient Care</div>
+                <div class="service-item">Full-Time / Part-Time House Maids</div>
+                <div class="service-item">Professional Cooks / Chefs</div>
+                <div class="service-item">Experienced Babysitters / Nannies</div>
+                <div class="service-item">Elderly Caretakers & Patient Care</div>
             </div>
         </div>
 
         <!-- Contact & Address Section -->
         <div class="card contact-info">
-            <h3 id="address-title" style="color: #1e3e62;">Contact & Office Address</h3>
-            <p>📍 <strong id="lbl-address">Address:</strong> <span id="address-text">B-8 Aali Bistar, 2nd Floor, New Delhi, India</span></p>
-            <p>📞 <strong id="lbl-phone">Phone:</strong> <a href="tel:+919650649459">+91 9650649459</a></p>
-            <p>💬 <strong id="lbl-whatsapp">WhatsApp:</strong> <a href="https://wa.me/919650649459">+91 9650649459</a></p>
-            <p>✉️ <strong id="lbl-email">Email:</strong> <a href="mailto:mandeepenterprises15@gmail.com">mandeepenterprises15@gmail.com</a></p>
+            <h3>Contact & Office Address</h3>
+            <p>📍 <strong>Address:</strong> B-8 Aali Bistar, 2nd Floor, New Delhi, India</p>
+            <p>📞 <strong>Phone:</strong> <a href="tel:+919650649459">+91 9650649459</a></p>
+            <p>💬 <strong>WhatsApp:</strong> <a href="https://wa.me/919650649459">+91 9650649459</a></p>
+            <p>✉️ <strong>Email:</strong> <a href="mailto:mandeepenterprises15@gmail.com">mandeepenterprises15@gmail.com</a></p>
         </div>
 
         <!-- Terms & Conditions Section -->
-        <div class="card tc-card">
-            <h3 id="tc-title">Terms And Conditions</h3>
+        <div class="card">
+            <h3 style="color: #0b192c;">Terms And Conditions</h3>
             <ul class="tc-list">
-                <li id="tc-1">Delhi Service Charge Is 40,000/- (Can Be changed later).</li>
-                <li id="tc-2">Commission Has to be paid in Cash.</li>
-                <li id="tc-3">Police Verification Must be done From Your Nearest Police Station.</li>
-                <li id="tc-4">Any Complaint Regarding maid should be informed any day in time Of 10:00 AM To 9:00 PM only.</li>
-                <li id="tc-5">Maid's Monthly Holiday is Only One.</li>
-                <li id="tc-6">If maid does not go on holiday and works, the holiday salary should be given.</li>
-                <li id="tc-7">Contract Only For 11 months.</li>
+                <li>Delhi Service Charge Is 40,000/- (Can Be changed later).</li>
+                <li>Commission Has to be paid in Cash.</li>
+                <li>Police Verification Must be done From Your Nearest Police Station.</li>
+                <li>Any Complaint Regarding maid should be informed any day in time Of 10:00 AM To 9:00 PM only.</li>
+                <li>Maid's Monthly Holiday is Only One.</li>
+                <li>If maid does not go on holiday and works, the holiday salary should be given.</li>
+                <li>Contract Only For 11 months.</li>
             </ul>
         </div>
     </div>
 
     <footer>
-        <p>© 2026 <strong id="footer-brand">Mandeep Enterprises</strong>. All Rights Reserved.</p>
+        <p>© 2026 <strong>Mandeep Enterprises</strong>. All Rights Reserved.</p>
     </footer>
 
-    <script>
-        let currentLang = 'en';
-
-        const content = {
-            en: {
-                langBtn: "हिंदी में देखें",
-                brandName: "Mandeep Enterprises",
-                brandTagline: "Trusted Maid & Caretaker Agency in New Delhi",
-                heroTitle: "Reliable Domestic Help For Your Home",
-                heroDesc: "Background-verified house maids, cooks, babysitters, and elderly caretakers in Delhi NCR.",
-                whatsappBtn: "💬 Chat on WhatsApp",
+</body>
+</html>
                 callBtn: "📞 Call Us Now",
                 servicesTitle: "Our Services",
                 srv1: "Full-Time / Part-Time House Maids",
